@@ -1,0 +1,40 @@
+define mode 0 argv end
+define file 1 argv end
+
+define write 0 cstr-to-pstr swap 1 1 syscall3 end
+
+
+"length of file is " puts file cstrlen print
+"\n" puts
+
+define sim
+"sim-file"
+end
+
+define com
+"com-file"
+end
+
+mode sim cstrcmp 1 = if
+ "[CMD] simulating " puts file puts
+ "\n" puts
+end
+
+mode com cstrcmp 1 = mode sim cstrcmp 0 = and if
+ "[CMD] compiling " puts file puts
+ "\n" puts
+end
+
+mode sim cstrcmp 0 = if
+ mode com cstrcmp 0 = if
+  "[CMD] Invalid sub-command provided " puts mode puts
+  "exited abnormally with code 1\n" puts
+ end
+end
+
+
+
+"Bye World\n"
+"Hello World\n"
+str-drop
+puts

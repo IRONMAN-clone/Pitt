@@ -1,0 +1,18 @@
+"mem keyword is used to store a byte at a particular index\n" puts
+
+"memory has =" puts
+0 97 mem 0 ,
+0 98 mem 0 ,
+0 99 mem 0 ,
+
+"\n \n " puts
+"memory keyword takes 2 arguments <index> <data>\n" puts
+"load/, keyword takes 1 argument <index>\n" puts
+
+"\n \n" puts
+"incremented memory has = " puts
+0 98 mem 0 ,
+0 99 mem 0 ,
+0 100 mem 0 ,
+
+"\n \n" puts

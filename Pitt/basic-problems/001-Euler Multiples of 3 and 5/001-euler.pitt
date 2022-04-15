@@ -1,0 +1,16 @@
+0 1 !8
+
+0 3 while dup 10 < then
+ dup  3 % 0 =
+ over 5 % 0 =
+
+ bor if  
+  over dup 1 @8
+  + 1 over over !8 drop
+ end
+
+ over 
+ 1 +
+end 
+
+1 @8 print

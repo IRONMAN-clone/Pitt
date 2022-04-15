@@ -1,0 +1,7 @@
+10 bind a
+
+0 while dup a <= then
+   dup print
+   "\n" puts
+   1 +
+end

@@ -1,0 +1,36 @@
+// FizzBuzz , Fizz , Buzz Application
+
+"./stdplib/stdio.pitt" import
+
+1 while dup 100 < then
+  dup 15 % 0 = if
+      "FizzBuzz" putsln
+      over print
+      "\n" puts
+  end
+  drop 1 +
+end
+
+"\n \n \n" puts
+
+1 while dup 100 < then
+  dup 3 % 0 = if
+     "Fizz" putsln
+     over print
+     "\n" puts
+  end
+  drop 1 +
+end
+
+"\n \n \n" puts
+
+1 while dup 100 < then
+  dup 5 % 0 = if
+    "Buzz" putsln
+    over print
+    "\n" puts
+  end
+  drop 1 +
+end
+
+"\n \n \n" puts

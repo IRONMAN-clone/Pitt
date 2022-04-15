@@ -1,0 +1,8 @@
+"Fibonacci sequence :- \n" puts
+
+1 2 while over 999 < then
+  over print
+  "\n" puts
+  swap over +
+end
+

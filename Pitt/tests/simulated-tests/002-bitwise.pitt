@@ -1,0 +1,13 @@
+define newline puts end
+
+"\n -----------------\n" puts
+24 2 bor print
+"\n" puts
+24 2 band print
+"\n" puts
+24 2 xor print
+"\n" puts
+24 2 shl print
+"\n" puts
+24 2 shr print
+"\n -----------------\n" puts

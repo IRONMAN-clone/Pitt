@@ -1,0 +1,12 @@
+"Performing euclidian division :- \n" puts
+
+"------------------------------------\n" puts
+
+7 3 ediv
+
+"Quotient  :-   " puts print
+"\n" puts
+"Remainder :-   " puts print
+"\n" puts
+
+"------------------------------------\n" puts

@@ -1,0 +1,7 @@
+"print 0 - 12 power binary number converted to decimal:- \n" puts
+
+1 1 while dup 12 < then
+  swap 2 * dup print over
+  "\n" puts
+  1 +
+end

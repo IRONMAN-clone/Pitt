@@ -1,0 +1,11 @@
+define write 0 cstr-to-pstr swap 1 1 sys3 end
+define newline 10 1 !8 1 sys1 end
+
+"Fibonacci sequence :- " write newline
+
+1 2 while over 999 < then
+  over print
+  "\n" puts
+  swap over +
+end
+

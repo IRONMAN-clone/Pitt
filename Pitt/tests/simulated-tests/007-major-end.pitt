@@ -1,0 +1,20 @@
+define major
+  "FirstLoop: 0--14\n \n" puts    
+  0 while dup 15 < then
+    dup print
+    " \n" puts
+    1 +
+  end
+
+  "\n \n" puts
+  "SecondLoop: 0--19\n \n" puts
+  0 while dup 20 < then
+    dup print
+    " \n" puts
+    1 +
+  end
+end
+
+major
+
+  

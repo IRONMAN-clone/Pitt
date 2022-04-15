@@ -1,0 +1,31 @@
+define memcpy
+    cstrlen 1 + dup  // stack-top  now has the length 
+    100 !int         // transfering the length to a safe place in stack
+    dup 101 !int // transfering the mem-cpy location to a safe place    
+
+    // This code only works for a single memcpy
+    0 while dup 100 @int < then
+       dup @8 101 @int !8
+       101 @int 1 + 101 !int
+       1 +
+    end
+end
+
+define print_ptr
+   100 @int 1 +  while dup 101 @int < then // it is taking some padding for som unknown reason
+      dup
+      "ptr: " puts print
+      "\n" puts
+      "ptr-val: " puts
+      dup sys1
+      "\n" puts
+      1 +
+   end
+end
+
+
+"Hello,World"          // string to copy
+str bind a       // binding that string to
+a 1 cstr-to-pstr // transfering C-Line to Byte-Like
+a memcpy
+print_ptr

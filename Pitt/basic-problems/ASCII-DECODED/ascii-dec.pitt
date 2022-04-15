@@ -1,0 +1,14 @@
+"{ASCII-encoded} -> {Decimal} (characters -> decimal) := \n \n" puts
+
+"ABCDEFGHIJLMNOPQRSTUVWXYZ-abcdefghijklmnopqrstuvwxyz" 1 cstr-to-pstr
+"ABCDEFGHIJLMNOPQRSTUVWXYZ-abcdefghijklmnopqrstuvwxyz" cstrlen
+
+1 while over over swap < then
+  "{" puts
+  dup sys1
+  "} -> " puts
+  "{" puts dup @8 print
+  "} " puts
+  "\n" puts
+  1 +
+end

@@ -1,0 +1,12 @@
+"-------------------------\n" puts
+
+2 2 + 4 = if
+  2 1 + 44 = if
+    "Hello\n" puts
+  else
+    "No\n" puts
+else
+  "Even No\n" puts
+end
+
+"-------------------------\n" puts

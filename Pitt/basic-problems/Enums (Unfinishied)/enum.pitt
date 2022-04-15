@@ -1,0 +1,27 @@
+"1.    REVERSED Enums :- \n" puts
+"NOTE: It's under development and planned to be fully in pitt \n \n" puts
+
+define MARK over over   !8                     end  // byte index
+define OFFSET 1         @8 1  + 1 !8      1 @8 end  // (byte[1] + 1) 1 [x] byte[1]
+define RESET            dup   -                end 
+define DROP_OFFSET      OFFSET 1 - @8          end
+
+define READ_ENUM
+    1 @8 while dup 0 > then
+       "[x] " puts
+              puts
+       "\n"   puts
+       1 -
+    end
+end
+
+
+
+0 1 MARK
+"ENUM6" OFFSET
+"ENUM5" OFFSET
+"ENUM4" OFFSET
+"ENUM3" OFFSET
+"ENUM2" OFFSET
+"ENUM1" OFFSET
+READ_ENUM

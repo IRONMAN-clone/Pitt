@@ -1,0 +1,32 @@
+"drop:- \n" puts
+
+2 3 print
+"\n" puts
+2 3 drop print
+"\n" puts
+
+"over:- \n" puts
+2 3 print
+"  " puts
+print
+"\n" puts
+
+2 3 over
+print
+"  " puts
+print
+"\n" puts
+
+"rot:- \n" puts
+2 3 print
+"  " puts
+print
+"  " puts
+
+"\n" puts
+
+2 3 rot print
+"  " puts
+print
+"  " puts
+print

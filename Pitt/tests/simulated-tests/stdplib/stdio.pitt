@@ -1,0 +1,82 @@
+define BUFFER_CAP 1024 end
+
+// -------- Standard Sizes  --------
+define sizeof(int)  4 end
+define sizeof(ptr)  8 end
+define sizeof(ft)   4 end
+define sizeof(db)  16 end
+define sizeof(char) 1 end
+
+define sizeof(memory) sizeof(char) end
+define sizeof(str)  sizeof(ptr)    end
+
+// -------- Standard Renames ---------
+define dec8   @8   end
+define enc8   !8   end
+define dec16 @16   end
+define enc16 !16   end
+define sput puts   end
+define deci @int   end
+define enci !int   end
+define dput print  end
+define book offset end
+define char sys1   end
+define write 1 1 sys3 end
+define copy dup    end
+define pop  drop   end
+define rotate rot  end
+define cast(pstr) dup cstr-to-pstr drop end
+define native_len // expects an (index) to begin the search
+    dup while dup @8 0 != then
+       dup 1 +
+    end
+    1 -
+end
+define sys2
+  over while over over swap <= then
+     dup char
+     1 +
+  end
+end
+define println
+  print
+  "\n" puts
+end
+define putsln
+  puts
+  "\n" puts
+end
+define fputsln
+  fput
+  "\n" puts
+end
+
+// -------- Standard Usefull stuffs ---------
+define SYS_Exit  exit       end // expects a exit status
+define SYS_Read  BUFFER_CAP stdin read end // expects a buffer size
+define SYS_Write fput       end // expects a valid file descriptor
+// TODOOOOO: SYS_Write and SYS_Read are not completly made as they can only interact with standard streams and nothing else
+
+
+// -------- Standard STREAMS ---------
+define STDIN  stdin  end
+define STDOUT stdout end
+define STDERR stderr end
+
+
+// -------- Standard MAX-MIN ---------
+define CHAR_BIT 8          end
+define SCHAR_MIN -128      end
+define SCHAR_MAX 127       end
+define UCHAR_MAX 255       end
+define CHAR_MIN -128       end
+define CHAR_MAX  127       end
+define MB_LEN_MAX  5       end
+define SHRT_MIN -32768     end
+define SHRT_MAX 32767      end
+define USHRT_MAX 65535     end
+define INT_MIN -2147483647 end
+define INT_MAX  2147483647 end
+
+
+

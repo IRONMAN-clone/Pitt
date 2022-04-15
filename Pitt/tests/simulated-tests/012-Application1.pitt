@@ -1,0 +1,26 @@
+define INTRINSIC_LOADPUSH8
+ "!@8"
+end
+
+"load and push demonstration\n" puts
+
+"------------------------------\n" puts
+define intrinsic 0 argv end
+define byte 1 argv end
+define position 2 argv end
+
+intrinsic INTRINSIC_LOADPUSH8 cstrcmp 1 = if
+  byte str-to-int position str-to-int !8
+  position str-to-int @8
+  "Found : " puts print
+  " at Index : " puts position str-to-int print
+  "\n" puts
+else
+ "Invalid intrinsic-type found " puts intrinsic puts
+ "\n" puts
+end
+
+"------------------------------\n" puts
+
+97 0 !8
+0 @8

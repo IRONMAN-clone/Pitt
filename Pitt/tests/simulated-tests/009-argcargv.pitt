@@ -1,0 +1,7 @@
+0 while dup argc < then
+  "Argument[" puts dup print
+  "]  " puts
+  dup argv puts
+  "\n" puts
+  1 +
+end

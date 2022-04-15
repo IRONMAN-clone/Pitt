@@ -1,0 +1,7 @@
+32767 1 !16
+
+1 while over 0 @16 over over <= then drop
+  dup print
+  "\n" puts
+  1 +
+end

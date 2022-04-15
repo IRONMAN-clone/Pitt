@@ -1,0 +1,10 @@
+define dup2
+  over over
+end
+
+
+0 100 while dup2 < then
+ dup print
+ "\n" puts
+ 1 -
+end

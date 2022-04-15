@@ -1,0 +1,22 @@
+define i16_MAX
+   "FROM MEMORY: 32767"
+end
+
+define MSG_MAX
+  "please be patient more coming in memory section"
+end
+
+define sizeof(int) 4 end
+define sizeof(i32) 4 4 shl end
+
+mem-alloc strx sizeof(int) sizeof(int) shl end
+
+define iter(i32) sizeof strx ptr-of strx end
+
+"FROM MEMORY: 32767" strx
+
+iter(i32) swap drop i16_MAX cstrlen swap 1 1 sys3  
+
+"\n" puts
+"please be patient more coming in memory section" strx
+iter(i32) swap drop MSG_MAX cstrlen swap 1 1 sys3  

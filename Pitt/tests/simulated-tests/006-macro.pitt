@@ -1,0 +1,19 @@
+define stdout2 print end
+define stdout1 puts end
+
+
+10 20 + stdout2 
+" \n" puts
+"Hello , World\n" stdout1
+
+
+
+2 2 + 4 = if
+  "Yes 2 + 2 is always = 4\n" stdout
+else
+  "Nah lol\n" stdout1
+end
+
+
+define age 5 end
+age print

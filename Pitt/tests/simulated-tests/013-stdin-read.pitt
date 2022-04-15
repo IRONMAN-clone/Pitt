@@ -1,0 +1,16 @@
+"First Number: " puts
+15 stdin read
+str-to-int
+
+"Second Number: " puts
+15 stdin read str-to-int
+
+
+over over
+print
+" + " puts
+print
+" = " puts
+
++ print
+

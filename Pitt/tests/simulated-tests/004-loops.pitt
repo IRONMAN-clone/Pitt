@@ -1,0 +1,7 @@
+"this code will print 0-999\n" puts
+
+0 while dup 1000 < then
+  dup print 
+  " \n" puts
+  1 +
+end
